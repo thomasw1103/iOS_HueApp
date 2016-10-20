@@ -12,7 +12,10 @@ import Alamofire
 class JSONHelper{
     
     static let sharedInstance = JSONHelper()
+    //SCHOOL URL: 
     let url = "http://192.168.1.179/api/148e6416399491c7177ea47a29e99edb/lights"
+    //THOMAS URL:
+    //let url = "http://192.168.142.1:80/api/9a62cc50112f924f16114991f4eb017/lights"
     var lightsArray = [Light]()
     
     
@@ -42,9 +45,23 @@ class JSONHelper{
         request.httpMethod = "PUT"
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
-        let values = ["on" : String(describing: lightObj.isOn)]
+        let values = ["on": lightObj.isOn!, "hue": lightObj.hue!, "bri": lightObj.bri!, "sat": lightObj.sat!] as [String : Any]
         
-        request.httpBody = try! JSONSerialization.data(withJSONObject: values, options: [])
-        Alamofire.request(request)
+        do {
+          request.httpBody = try JSONSerialization.data(withJSONObject: values)
+        } catch {
+            print("Error")
+        }
+        Alamofire.request(request).responseJSON { response in
+            switch(response.result) {
+            case .success(let value):
+                print(value)
+                break;
+                
+            case .failure(let error):
+                print(error)
+                break;
+            }
+ }
     }
 }

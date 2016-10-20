@@ -12,9 +12,9 @@ class Light : NSObject {
     
     var lightId : String!
     var lightName : String?
-    var hue : Double?
-    var sat : Double?
-    var bri : Double?
+    var hue : Int?
+    var sat : Int?
+    var bri : Int?
     var isOn : Bool?
     
 }

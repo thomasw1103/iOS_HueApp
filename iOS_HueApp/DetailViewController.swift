@@ -2,8 +2,8 @@
 //  DetailViewController.swift
 //  iOS_HueApp
 //
-//  Created by Thomas Woerdeman on 19/10/2016.
-//  Copyright © 2016 Thomas Woerdeman. All rights reserved.
+//  Created by Frank Molengraaf on 19/10/2016.
+//  Copyright © 2016 Frank Molengraaf. All rights reserved.
 //
 
 import UIKit
@@ -19,6 +19,15 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var briSlider: UISlider!
     
     override func viewDidLoad() {
+        
+        hueSlider.minimumValue = 0
+        hueSlider.maximumValue = 65535
+        
+        satSlider.minimumValue = 0
+        satSlider.maximumValue = 255
+        
+        briSlider.minimumValue = 0
+        briSlider.maximumValue = 255
         
         lampNameLabel.text = light?.lightName
         
@@ -46,12 +55,22 @@ class DetailViewController: UIViewController {
     }
     
     func stateChanged(switchState: UISwitch) {
-        if switchState.isOn {
-            light!.isOn = true
-        } else {
-            light!.isOn = false
-        }
+            light?.isOn = switchState.isOn
+        JSONHelper.sharedInstance.putState(lightObj: light!)
+    }
+    @IBAction func hueSliderChanged(_ sender: AnyObject) {
+        light?.hue = Int(round(hueSlider.value))
         JSONHelper.sharedInstance.putState(lightObj: light!)
         
+    }
+    
+    @IBAction func satSliderChanged(_ sender: AnyObject) {
+        light?.sat = Int(round(satSlider.value))
+        JSONHelper.sharedInstance.putState(lightObj: light!)
+    }
+    
+    @IBAction func briSliderChanged(_ sender: AnyObject) {
+        light?.bri = Int(round(briSlider.value))
+        JSONHelper.sharedInstance.putState(lightObj: light!)
     }
 }

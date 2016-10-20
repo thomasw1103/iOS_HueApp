@@ -30,15 +30,15 @@ class HueLightsTableViewController: UITableViewController {
                                                 light?.isOn = on
                                             }
             
-                                            if let hue = state["hue"] as? Double {
+                                            if let hue = state["hue"] as? Int {
                                                 light?.hue = hue
                                             }
             
-                                            if let bri = state["bri"] as? Double {
+                                            if let bri = state["bri"] as? Int {
                                                 light?.bri = bri
                                             }
             
-                                            if let sat = state["sat"] as? Double {
+                                            if let sat = state["sat"] as? Int {
                                                 light?.sat = sat
                                             }
             
