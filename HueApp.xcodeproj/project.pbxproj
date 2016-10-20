@@ -22,7 +22,7 @@
 		19FAE352835929240591CA0B /* Pods-iOS_HueApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS_HueApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS_HueApp/Pods-iOS_HueApp.release.xcconfig"; sourceTree = "<group>"; };
 		4787C11626343397C865EC02 /* Pods_iOS_HueApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_HueApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B776BDD81DB7650E008F1DBC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		B77E4F631DB61548005C2D39 /* iOS_HueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_HueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77E4F631DB61548005C2D39 /* HueApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HueApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77E4F661DB61548005C2D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B77E4F6B1DB61548005C2D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B77E4F6D1DB61548005C2D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		B77E4F641DB61548005C2D39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B77E4F631DB61548005C2D39 /* iOS_HueApp.app */,
+				B77E4F631DB61548005C2D39 /* HueApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B77E4F621DB61548005C2D39 /* iOS_HueApp */ = {
+		B77E4F621DB61548005C2D39 /* HueApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B77E4F751DB61548005C2D39 /* Build configuration list for PBXNativeTarget "iOS_HueApp" */;
+			buildConfigurationList = B77E4F751DB61548005C2D39 /* Build configuration list for PBXNativeTarget "HueApp" */;
 			buildPhases = (
 				6563B2F1EEA9A31CBDCC56B0 /* [CP] Check Pods Manifest.lock */,
 				B77E4F5F1DB61548005C2D39 /* Sources */,
@@ -139,9 +139,9 @@
 			);
 			dependencies = (
 			);
-			name = iOS_HueApp;
+			name = HueApp;
 			productName = iOS_HueApp;
-			productReference = B77E4F631DB61548005C2D39 /* iOS_HueApp.app */;
+			productReference = B77E4F631DB61548005C2D39 /* HueApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -160,7 +160,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B77E4F5E1DB61548005C2D39 /* Build configuration list for PBXProject "iOS_HueApp" */;
+			buildConfigurationList = B77E4F5E1DB61548005C2D39 /* Build configuration list for PBXProject "HueApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B77E4F621DB61548005C2D39 /* iOS_HueApp */,
+				B77E4F621DB61548005C2D39 /* HueApp */,
 			);
 		};
 /* End PBXProject section */
@@ -400,7 +400,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B77E4F5E1DB61548005C2D39 /* Build configuration list for PBXProject "iOS_HueApp" */ = {
+		B77E4F5E1DB61548005C2D39 /* Build configuration list for PBXProject "HueApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77E4F731DB61548005C2D39 /* Debug */,
@@ -409,7 +409,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B77E4F751DB61548005C2D39 /* Build configuration list for PBXNativeTarget "iOS_HueApp" */ = {
+		B77E4F751DB61548005C2D39 /* Build configuration list for PBXNativeTarget "HueApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B77E4F761DB61548005C2D39 /* Debug */,

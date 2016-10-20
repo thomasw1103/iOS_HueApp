@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B77E4F621DB61548005C2D39"
-            BuildableName = "iOS_HueApp.app"
-            BlueprintName = "iOS_HueApp"
-            ReferencedContainer = "container:iOS_HueApp.xcodeproj">
+            BuildableName = "HueApp.app"
+            BlueprintName = "HueApp"
+            ReferencedContainer = "container:HueApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B77E4F621DB61548005C2D39"
-            BuildableName = "iOS_HueApp.app"
-            BlueprintName = "iOS_HueApp"
-            ReferencedContainer = "container:iOS_HueApp.xcodeproj">
+            BuildableName = "HueApp.app"
+            BlueprintName = "HueApp"
+            ReferencedContainer = "container:HueApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
