@@ -55,7 +55,7 @@ class DetailViewController: UIViewController {
     }
     
     func stateChanged(switchState: UISwitch) {
-            light?.isOn = switchState.isOn
+        light?.isOn = switchState.isOn
         JSONHelper.sharedInstance.putState(lightObj: light!)
     }
     @IBAction func hueSliderChanged(_ sender: AnyObject) {
